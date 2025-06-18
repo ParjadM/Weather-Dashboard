@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="earth-bg"></div>
+    <canvas id="weather-effect"></canvas>
+    <div class="container">
+        <form id="weather-form">
+            <input type="text" id="weather-input" placeholder="Enter city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-output"></div>
+        <div id="forecast-output"></div>
+    </div>
+    <svg id="dancing-person" width="120" height="120" viewBox="0 0 64 64" style="position:fixed;right:2vw;bottom:5vh;z-index:2;pointer-events:none;">
+      <circle cx="32" cy="12" r="6" fill="#FFD966"/>
+      <rect x="28" y="18" width="8" height="20" rx="4" fill="#6FA8DC">
+        <animate attributeName="y" values="18;22;18" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="20" y="38" width="8" height="18" rx="4" fill="#6AA84F" transform="rotate(-20 24 47)">
+        <animate attributeName="y" values="38;44;38" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="36" y="38" width="8" height="18" rx="4" fill="#6AA84F" transform="rotate(20 40 47)">
+        <animate attributeName="y" values="38;44;38" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="20" y="22" width="8" height="14" rx="4" fill="#E06666" transform="rotate(-30 24 29)">
+        <animate attributeName="y" values="22;18;22" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="36" y="22" width="8" height="14" rx="4" fill="#E06666" transform="rotate(30 40 29)">
+        <animate attributeName="y" values="22;18;22" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

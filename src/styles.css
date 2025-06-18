@@ -1,0 +1,95 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+#earth-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+#weather-effect {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+.container {
+    background: rgba(255, 255, 255, 0.7); /* semi-transparent */
+    padding: 1.5rem 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: center;
+    min-width: 420px;
+    max-width: 700px;
+    width: 60vw;
+    min-height: unset;
+    max-height: 340px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+}
+#dancing-person {
+    position: fixed;
+    right: 2vw;
+    bottom: 5vh;
+    z-index: 2;
+    pointer-events: none;
+}
+#world-clock-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    background: rgba(255,255,255,0.85);
+    z-index: 10;
+    padding: 0.5rem 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.clock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    font-weight: 500;
+}
+.clock-city {
+    font-size: 0.95em;
+    color: #333;
+}
+.clock-time {
+    font-size: 1.2em;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+#forecast-output {
+    margin-top: 1rem;
+}
+.forecast-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.forecast-day {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-align: center;
+    min-width: 70px;
+}
