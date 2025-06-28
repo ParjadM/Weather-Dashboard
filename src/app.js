@@ -283,7 +283,7 @@ function setWeatherEffect(mainWeather) {
 }
 
 // --- Weather App Logic ---
-const apiKey = '903fd66843b0fb7a91f6408e7461a42a';
+const apiKey = 'PLACE HERE';
 const weatherForm = document.getElementById('weather-form');
 const weatherInput = document.getElementById('weather-input');
 const weatherOutput = document.getElementById('weather-output');
